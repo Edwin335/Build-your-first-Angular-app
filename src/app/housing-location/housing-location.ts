@@ -6,12 +6,12 @@ import { HousingLocationInfo } from '../housinglocation';
   imports: [],
   template: `
     <p>
-      {{ housingLocation.name }}
+      {{ housingLocation?.name }}
     </p>
   `,
   styles: ``
 })
 
 export class HousingLocation {
-    @Input() housingLocation!: HousingLocationInfo;
+    @Input() housingLocation?: HousingLocationInfo;
 }
